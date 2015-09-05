@@ -58,3 +58,5 @@ CoreLocation.framework/Headers/CLRegion.h
 CoreLocation.framework/Headers/CLHeading.h
 
 CoreLocation.framework/Modules/module.modulemap
+
+HiiFive.xcodeproj/project.pbxproj
