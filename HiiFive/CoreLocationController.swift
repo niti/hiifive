@@ -19,11 +19,15 @@ class CoreLocationController : NSObject, CLLocationManagerDelegate {
         super.init()
         self.locationManager.delegate = self
         self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.distanceFilter  = 500 // Must move at least 100ft. (30.48 meters)
+        self.locationManager.distanceFilter  = 30 // Must move at least 100ft. (30.48 meters)
         self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer // Accurate within a kilometer
-        self.locationManager.startUpdatingLocation()
+      
 
     }
+    func startUpdatingLocation() {
+        locationManager.startUpdatingLocation()
+    }
+    
     
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         print("didChangeAuthorizationStatus")
@@ -51,7 +55,21 @@ class CoreLocationController : NSObject, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        let location = locations.last as CLLocation!
+        //let location = locations.last as CLLocation!
+        
+        let latestLocation: AnyObject = locations[locations.count - 1]
+        
+        let latitude = String(format: "%.4f",
+            latestLocation.coordinate.latitude)
+        let longitude = String(format: "%.4f",
+            latestLocation.coordinate.longitude)
+        let horizontalAccuracy = String(format: "%.4f",
+            latestLocation.horizontalAccuracy)
+        let altitude = String(format: "%.4f",
+            latestLocation.altitude)
+        let verticalAccuracy = String(format: "%.4f",
+            latestLocation.verticalAccuracy)
+ print("lat:  \(latitude), long: \(longitude), horz. accuracy: \(horizontalAccuracy), alt: \(altitude),vert. accuracy: \(verticalAccuracy) ")
         
         // STORING GEOPOINTS IN PARSE ///////////
         // Geo Location via Parse: Gets current location in
@@ -68,8 +86,8 @@ class CoreLocationController : NSObject, CLLocationManagerDelegate {
         // OUTPUT FROM ABOVE: just coordinate: CLLocationCoordinate2D(latitude: 39.9012854679285, longitude: -75.1722105229905)
         
         // TEST FOR CURRENT LOCATION (LAT + LONG) //////////
-         print("didUpdateLocations:  \(location.coordinate.latitude), \(location.coordinate.longitude)")
-         notifyUserLocation(location.coordinate.latitude,longcord: location.coordinate.longitude)
+        // print("didUpdateLocations:  \(location.coordinate.latitude), \(location.coordinate.longitude)")
+         //notifyUserLocation(location.coordinate.latitude,longcord: location.coordinate.longitude)
         
         // PULLS CURRENT USER INFORMATION /////////////
         // var user = PFUser.currentUser()
