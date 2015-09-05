@@ -255,6 +255,11 @@
 					9D0309281B9AB84000BB8295 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = WM89QG2982;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					9D03093C1B9AB84000BB8295 = {
 						CreatedOnToolsVersion = 7.0;

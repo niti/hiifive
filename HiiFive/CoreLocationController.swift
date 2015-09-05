@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import UIKit
 
 class CoreLocationController : NSObject, CLLocationManagerDelegate {
     
@@ -17,6 +18,9 @@ class CoreLocationController : NSObject, CLLocationManagerDelegate {
         super.init()
         self.locationManager.delegate = self
         self.locationManager.requestAlwaysAuthorization()
+        self.locationManager.distanceFilter  = 30.48 // Must move at least 100ft. (30.48 meters)
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer // Accurate within a kilometer
+
     }
     
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
@@ -29,7 +33,7 @@ class CoreLocationController : NSObject, CLLocationManagerDelegate {
             
         case .Authorized:
             print(".Authorized")
-            //self.locationManager.startUpdating()
+            locationManager.startUpdatingLocation()
             break
             
         case .Denied:
@@ -47,7 +51,18 @@ class CoreLocationController : NSObject, CLLocationManagerDelegate {
         
         let location = locations.last as CLLocation!
         print("didUpdateLocations:  \(location.coordinate.latitude), \(location.coordinate.longitude)")
+        notifyUser(location.coordinate.latitude,longcord: location.coordinate.longitude)
         
+    }
+    
+    func notifyUser(latcord: Double, longcord: Double){
+        //[snippet, caption="Creating Notifications in Swift"]
+        let localNotification: UILocalNotification = UILocalNotification()
+        localNotification.alertAction = "Current Latitude + Longitude Coordinates"
+        localNotification.alertBody = "Lat: \(latcord) Long: \(longcord)"
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        NSLog("Sent notification")
     }
     
 }

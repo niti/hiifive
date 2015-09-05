@@ -11,8 +11,11 @@ import Parse
 
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
 
+    var manager = CLLocationManager()
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,6 +25,7 @@ class ViewController: UIViewController {
         testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             print("Object has been saved.")
         }
+     
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,16 +35,10 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         self.performSegueWithIdentifier("loginView", sender: self)
+        
 
     }
-    func notifyUser(){
-        //[snippet, caption="Creating Notifications in Swift"]
-        let localNotification: UILocalNotification = UILocalNotification()
-        localNotification.alertAction = "to hiifive your match!"
-        localNotification.alertBody = "You've matched with someone nearby!”"
-        localNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
-        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-    }
+
 
 
 }
