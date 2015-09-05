@@ -22,15 +22,14 @@
 		9D03096B1B9ABB4300BB8295 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D03096A1B9ABB4300BB8295 /* StoreKit.framework */; };
 		9D03096D1B9ABB4B00BB8295 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D03096C1B9ABB4B00BB8295 /* SystemConfiguration.framework */; };
 		9D03096F1B9ABB6800BB8295 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D03096E1B9ABB6800BB8295 /* Accounts.framework */; };
-		9D0309711B9ABD6F00BB8295 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0309701B9ABD6F00BB8295 /* libz.tbd */; };
-		9D0309731B9ABD7E00BB8295 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0309721B9ABD7E00BB8295 /* libsqlite3.tbd */; };
 		9D0309751B9AE0F500BB8295 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0309741B9AE0F500BB8295 /* RegisterPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9D0309771B9AECD400BB8295 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0309761B9AECD400BB8295 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9D0309791B9B2EA800BB8295 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0309781B9B2EA800BB8295 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ACF4A4371B9B21FF0023E3FD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF4A4351B9B21FF0023E3FD /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		ACF4A4381B9B21FF0023E3FD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF4A4361B9B21FF0023E3FD /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		ACF4A43A1B9B247B0023E3FD /* CoreLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4A4391B9B247B0023E3FD /* CoreLocationController.swift */; settings = {ASSET_TAGS = (); }; };
-		ACF4A43C1B9B26380023E3FD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF4A43B1B9B26380023E3FD /* CoreLocation.framework */; };
+		EE4464E31B9B5F89009863F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4464DF1B9B5250009863F1 /* CoreLocation.framework */; };
+		EE4464E51B9B6F6D009863F1 /* pennappslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EE4464E41B9B6F6D009863F1 /* pennappslogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,15 +71,14 @@
 		9D03096A1B9ABB4300BB8295 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9D03096C1B9ABB4B00BB8295 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9D03096E1B9ABB6800BB8295 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		9D0309701B9ABD6F00BB8295 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		9D0309721B9ABD7E00BB8295 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		9D0309741B9AE0F500BB8295 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		9D0309761B9AECD400BB8295 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D0309781B9B2EA800BB8295 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ACF4A4351B9B21FF0023E3FD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		ACF4A4361B9B21FF0023E3FD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		ACF4A4391B9B247B0023E3FD /* CoreLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationController.swift; sourceTree = "<group>"; };
-		ACF4A43B1B9B26380023E3FD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EE4464DF1B9B5250009863F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = ../CoreLocation.framework; sourceTree = "<group>"; };
+		EE4464E41B9B6F6D009863F1 /* pennappslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pennappslogo.png; path = "hhfive graphics/pennappslogo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +86,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D0309731B9ABD7E00BB8295 /* libsqlite3.tbd in Frameworks */,
-				9D0309711B9ABD6F00BB8295 /* libz.tbd in Frameworks */,
 				9D03096F1B9ABB6800BB8295 /* Accounts.framework in Frameworks */,
 				ACF4A4371B9B21FF0023E3FD /* Bolts.framework in Frameworks */,
 				9D03096D1B9ABB4B00BB8295 /* SystemConfiguration.framework in Frameworks */,
 				9D03096B1B9ABB4300BB8295 /* StoreKit.framework in Frameworks */,
 				ACF4A4381B9B21FF0023E3FD /* Parse.framework in Frameworks */,
+				EE4464E31B9B5F89009863F1 /* CoreLocation.framework in Frameworks */,
 				9D0309691B9ABB3A00BB8295 /* Security.framework in Frameworks */,
 				9D0309671B9ABB3300BB8295 /* QuartzCore.framework in Frameworks */,
 				9D0309631B9ABB2500BB8295 /* CoreGraphics.framework in Frameworks */,
@@ -107,7 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACF4A43C1B9B26380023E3FD /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,9 +120,8 @@
 		9D0309201B9AB84000BB8295 = {
 			isa = PBXGroup;
 			children = (
-				ACF4A43B1B9B26380023E3FD /* CoreLocation.framework */,
-				9D0309721B9ABD7E00BB8295 /* libsqlite3.tbd */,
-				9D0309701B9ABD6F00BB8295 /* libz.tbd */,
+				EE4464E41B9B6F6D009863F1 /* pennappslogo.png */,
+				EE4464DF1B9B5250009863F1 /* CoreLocation.framework */,
 				ACF4A4351B9B21FF0023E3FD /* Bolts.framework */,
 				ACF4A4361B9B21FF0023E3FD /* Parse.framework */,
 				9D03096E1B9ABB6800BB8295 /* Accounts.framework */,
@@ -257,9 +252,7 @@
 				TargetAttributes = {
 					9D0309281B9AB84000BB8295 = {
 						CreatedOnToolsVersion = 7.0;
-
-						DevelopmentTeam = 984B6A6L5U;
-
+						DevelopmentTeam = GJ983GN5BM;
 					};
 					9D03093C1B9AB84000BB8295 = {
 						CreatedOnToolsVersion = 7.0;
@@ -299,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D0309371B9AB84000BB8295 /* LaunchScreen.storyboard in Resources */,
+				EE4464E51B9B6F6D009863F1 /* pennappslogo.png in Resources */,
 				9D0309341B9AB84000BB8295 /* Assets.xcassets in Resources */,
 				9D0309321B9AB84000BB8295 /* Main.storyboard in Resources */,
 			);
@@ -480,7 +474,11 @@
 				INFOPLIST_FILE = HiiFive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.NKCH.HiiFive;
+				OTHER_LDFLAGS = (
+					"-lsqlite3.0",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HiiFive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -500,7 +498,11 @@
 				INFOPLIST_FILE = HiiFive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.NKCH.HiiFive;
+				OTHER_LDFLAGS = (
+					"-lsqlite3.0",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HiiFive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

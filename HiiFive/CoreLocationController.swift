@@ -47,13 +47,13 @@ class CoreLocationController : NSObject, CLLocationManagerDelegate {
         }
     }
     
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        let location = locations.last as CLLocation!
-        print("didUpdateLocations:  \(location.coordinate.latitude), \(location.coordinate.longitude)")
-        notifyUser(location.coordinate.latitude,longcord: location.coordinate.longitude)
-        
-    }
+//    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        
+//        let location = locations.last as CLLocation!
+//        print("didUpdateLocations:  \(location.coordinate.latitude), \(location.coordinate.longitude)")
+//        notifyUser(location.coordinate.latitude,longcord: location.coordinate.longitude)
+//        
+//    }
     
     func notifyUser(latcord: Double, longcord: Double){
         //[snippet, caption="Creating Notifications in Swift"]
