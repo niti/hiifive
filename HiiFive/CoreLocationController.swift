@@ -50,7 +50,7 @@ class CoreLocationController : NSObject, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        let location = locations.last as CLLocation!
+        //let location = locations.last as CLLocation!
         
         // STORING GEOPOINTS IN PARSE ///////////
         // Geo Location via Parse: Gets current location in
@@ -62,7 +62,7 @@ class CoreLocationController : NSObject, CLLocationManagerDelegate {
         // }
         
         // OUTPUT FOR CLLOCATIONCOORDINATE2D //////////
-        print("just coordinate: \(location.coordinate)")
+        //print("just coordinate: \(location.coordinate)")
         // OUTPUT FROM ABOVE: just coordinate: CLLocationCoordinate2D(latitude: 39.9012854679285, longitude: -75.1722105229905)
         
         // TEST FOR CURRENT LOCATION (LAT + LONG) //////////

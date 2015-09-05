@@ -26,6 +26,7 @@
 		9D0309731B9ABD7E00BB8295 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0309721B9ABD7E00BB8295 /* libsqlite3.tbd */; };
 		9D0309751B9AE0F500BB8295 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0309741B9AE0F500BB8295 /* RegisterPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9D0309771B9AECD400BB8295 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0309761B9AECD400BB8295 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9D0309791B9B2EA800BB8295 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0309781B9B2EA800BB8295 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ACF4A4371B9B21FF0023E3FD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF4A4351B9B21FF0023E3FD /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		ACF4A4381B9B21FF0023E3FD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF4A4361B9B21FF0023E3FD /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		ACF4A43A1B9B247B0023E3FD /* CoreLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4A4391B9B247B0023E3FD /* CoreLocationController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -75,6 +76,7 @@
 		9D0309721B9ABD7E00BB8295 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		9D0309741B9AE0F500BB8295 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		9D0309761B9AECD400BB8295 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9D0309781B9B2EA800BB8295 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ACF4A4351B9B21FF0023E3FD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		ACF4A4361B9B21FF0023E3FD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		ACF4A4391B9B247B0023E3FD /* CoreLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationController.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				9D0309381B9AB84000BB8295 /* Info.plist */,
 				9D0309741B9AE0F500BB8295 /* RegisterPageViewController.swift */,
 				9D0309761B9AECD400BB8295 /* LoginViewController.swift */,
+				9D0309781B9B2EA800BB8295 /* MainViewController.swift */,
 			);
 			path = HiiFive;
 			sourceTree = "<group>";
@@ -254,12 +257,9 @@
 				TargetAttributes = {
 					9D0309281B9AB84000BB8295 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = WM89QG2982;
-						SystemCapabilities = {
-							com.apple.BackgroundModes = {
-								enabled = 1;
-							};
-						};
+
+						DevelopmentTeam = 984B6A6L5U;
+
 					};
 					9D03093C1B9AB84000BB8295 = {
 						CreatedOnToolsVersion = 7.0;
@@ -328,6 +328,7 @@
 				ACF4A43A1B9B247B0023E3FD /* CoreLocationController.swift in Sources */,
 				9D0309771B9AECD400BB8295 /* LoginViewController.swift in Sources */,
 				9D03092F1B9AB84000BB8295 /* ViewController.swift in Sources */,
+				9D0309791B9B2EA800BB8295 /* MainViewController.swift in Sources */,
 				9D03092D1B9AB84000BB8295 /* AppDelegate.swift in Sources */,
 				9D0309751B9AE0F500BB8295 /* RegisterPageViewController.swift in Sources */,
 			);

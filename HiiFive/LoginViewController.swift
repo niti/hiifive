@@ -19,6 +19,7 @@ class LoginViewController:UIViewController{
     @IBOutlet weak var loginButtonTapped: UIButton!
     
       let moveToMainScreen = "LoginSuccesful"
+     let loggedIn = "loggedIn"
     
     //user already logged in
     
@@ -27,9 +28,13 @@ class LoginViewController:UIViewController{
     {
         PFUser.logInWithUsernameInBackground(emailTextField.text!, password: passwordTextField.text!) { user, error in
             if user != nil {
-                self.performSegueWithIdentifier(self.moveToMainScreen, sender: nil)
+                
+           self.performSegueWithIdentifier(self.loggedIn, sender: nil)
+                
+                
             } else {
-                let alert = UIAlertController(title: "Error", message: "Error in password or email", preferredStyle: UIAlertControllerStyle.Alert)
+
+                let alert = UIAlertController(title: "Alert", message: "Invalid Login. Please Try again.", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
