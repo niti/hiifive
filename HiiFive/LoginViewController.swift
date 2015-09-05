@@ -27,10 +27,14 @@ class LoginViewController:UIViewController{
     {
         PFUser.logInWithUsernameInBackground(emailTextField.text!, password: passwordTextField.text!) { user, error in
             if user != nil {
-                self.performSegueWithIdentifier(self.moveToMainScreen, sender: nil)
+                
+                LoginViewController(self.moveToMainScreen, animated: true, completion: nil)
+                
+                
             } else {
-                let alert = UIAlertController(title: "Error", message: "Error in password or email", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "C```lick", style: UIAlertActionStyle.Default, handler: nil))
+
+                let alert = UIAlertController(title: "Alert", message: "Invalid Login. Please Try again.", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
         }

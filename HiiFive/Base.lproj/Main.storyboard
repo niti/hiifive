@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F19a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HvM-E6-v6e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F19a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="K7h-1i-cHs">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
@@ -91,7 +91,6 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginButtonTapped:" destination="K7h-1i-cHs" eventType="touchUpInside" id="hFP-ke-wbr"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginSuccesful" id="3oE-Hc-wLf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YU-Yf-EbU">
@@ -114,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQG-bh-4EF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="315"/>
+            <point key="canvasLocation" x="2221" y="-551"/>
         </scene>
         <!--Register Page View Controller-->
         <scene sceneID="htR-Mj-Wjn">
@@ -156,7 +155,6 @@
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="registerButtonTapped:" destination="fdV-fm-c8d" eventType="touchUpInside" id="nCL-Rx-d9e"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="RegSuccesful" id="Dyj-zk-Bpw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGw-hx-TN5">
@@ -216,7 +214,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3oE-Hc-wLf"/>
-        <segue reference="m8K-9V-XQp"/>
+        <segue reference="001-pn-Bmy"/>
     </inferredMetricsTieBreakers>
 </document>
