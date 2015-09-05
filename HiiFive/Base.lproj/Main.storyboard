@@ -109,6 +109,7 @@
                         <outlet property="emailTextField" destination="cbl-yj-3ev" id="TZU-T4-kWc"/>
                         <outlet property="loginButtonTapped" destination="ltk-Zl-b7k" id="SJr-ab-Gjy"/>
                         <outlet property="passwordTextField" destination="UZb-ow-8Ac" id="NCp-MK-6JT"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="loggedIn" id="04E-Xc-4ot"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQG-bh-4EF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -188,11 +189,12 @@
                         <outlet property="passwordTextField" destination="qgi-AH-HVR" id="7Ln-7T-03U"/>
                         <outlet property="registerButton" destination="CCY-Ir-lVB" id="Lpt-yb-nIE"/>
                         <outlet property="repeatPassword" destination="vL2-vT-cMH" id="MHG-jD-J52"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="RegSuccesful" id="eSk-Xv-b1r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVT-6E-QKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1414" y="1152"/>
+            <point key="canvasLocation" x="1694" y="1352"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hba-d3-0vr">
@@ -214,6 +216,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="eSk-Xv-b1r"/>
         <segue reference="001-pn-Bmy"/>
     </inferredMetricsTieBreakers>
 </document>

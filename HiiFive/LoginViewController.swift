@@ -19,6 +19,7 @@ class LoginViewController:UIViewController{
     @IBOutlet weak var loginButtonTapped: UIButton!
     
       let moveToMainScreen = "LoginSuccesful"
+     let loggedIn = "loggedIn"
     
     //user already logged in
     
@@ -28,7 +29,7 @@ class LoginViewController:UIViewController{
         PFUser.logInWithUsernameInBackground(emailTextField.text!, password: passwordTextField.text!) { user, error in
             if user != nil {
                 
-                LoginViewController(self.moveToMainScreen, animated: true, completion: nil)
+           self.performSegueWithIdentifier(self.loggedIn, sender: nil)
                 
                 
             } else {
