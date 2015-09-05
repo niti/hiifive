@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B96DF643-2883-4173-BADE-933DA034C08D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HiiFive</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ACCEB192B0345ECBF20845D20BD65AA920B08D68</key>
+		<string>github.com:nitipaudyal/hiifive.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HiiFive.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ACCEB192B0345ECBF20845D20BD65AA920B08D68</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:nitipaudyal/hiifive.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ACCEB192B0345ECBF20845D20BD65AA920B08D68</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ACCEB192B0345ECBF20845D20BD65AA920B08D68</string>
+			<key>IDESourceControlWCCName</key>
+			<string>hiifive</string>
+		</dict>
+	</array>
+</dict>
+</plist>

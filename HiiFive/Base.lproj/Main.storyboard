@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F19a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HvM-E6-v6e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HvM-E6-v6e">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
@@ -38,7 +38,6 @@
         <!--Login View Controller-->
         <scene sceneID="sZF-UF-FZN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OQG-bh-4EF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="K7h-1i-cHs" customClass="LoginViewController" customModule="HiiFive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NcX-Jk-fhx"/>
@@ -104,6 +103,7 @@
                         <outlet property="passwordTextField" destination="UZb-ow-8Ac" id="NCp-MK-6JT"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQG-bh-4EF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1793" y="315"/>
         </scene>
@@ -207,7 +207,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Dyj-zk-Bpw"/>
+        <segue reference="3oE-Hc-wLf"/>
         <segue reference="001-pn-Bmy"/>
     </inferredMetricsTieBreakers>
 </document>

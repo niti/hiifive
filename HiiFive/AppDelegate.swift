@@ -14,9 +14,16 @@ import Bolts
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var coreLocationController:CoreLocationController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        self.coreLocationController = CoreLocationController()
+        
+        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge], categories: nil)
+        application.registerUserNotificationSettings(settings)
+
+        
         // Override point for customization after application launch.
        
         // [Optional] Power your app with Local Datastore. For more info, go to
@@ -29,6 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        
         
         return true
     }

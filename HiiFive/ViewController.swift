@@ -33,6 +33,14 @@ class ViewController: UIViewController {
         self.performSegueWithIdentifier("loginView", sender: self)
 
     }
+    func notifyUser(){
+        //[snippet, caption="Creating Notifications in Swift"]
+        let localNotification: UILocalNotification = UILocalNotification()
+        localNotification.alertAction = "to hiifive your match!"
+        localNotification.alertBody = "You've matched with someone nearby!”"
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+    }
 
 
 }
