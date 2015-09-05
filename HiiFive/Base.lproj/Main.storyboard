@@ -83,6 +83,7 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginButtonTapped:" destination="K7h-1i-cHs" eventType="touchUpInside" id="hFP-ke-wbr"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginSuccesful" id="3oE-Hc-wLf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YU-Yf-EbU">
@@ -146,6 +147,7 @@
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="registerButtonTapped:" destination="fdV-fm-c8d" eventType="touchUpInside" id="nCL-Rx-d9e"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="RegSuccesful" id="Dyj-zk-Bpw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGw-hx-TN5">
@@ -205,6 +207,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Dyj-zk-Bpw"/>
         <segue reference="001-pn-Bmy"/>
     </inferredMetricsTieBreakers>
 </document>

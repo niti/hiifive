@@ -18,6 +18,7 @@ class RegisterPageViewController:UIViewController{
     
     @IBOutlet weak var repeatPassword: UITextField!
     @IBOutlet weak var registerButton: UIButton!
+   let moveToMainScreen = "RegSuccesful"
     
     @IBAction func registerButtonTapped(sender:AnyObject){
         
@@ -66,9 +67,10 @@ class RegisterPageViewController:UIViewController{
                 let thealert = UIAlertController(title: "Alert", message: "Successful Registration", preferredStyle: UIAlertControllerStyle.Alert)
                 thealert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(thealert, animated: true, completion: nil)
-            } else if let error = error {
+                self.performSegueWithIdentifier(self.moveToMainScreen, sender: nil)
+            } else {
                 //Something bad has occurred
-                let alert = UIAlertController(title: "Alert", message: "Error Login", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Alert", message: "Login unsucessful", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
