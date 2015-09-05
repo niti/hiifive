@@ -21,12 +21,10 @@ class CoreLocationController : NSObject, CLLocationManagerDelegate {
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.distanceFilter  = 30 // Must move at least 100ft. (30.48 meters)
         self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer // Accurate within a kilometer
-      
+        self.locationManager.startUpdatingLocation()
 
     }
-    func startUpdatingLocation() {
-        locationManager.startUpdatingLocation()
-    }
+
     
     
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
