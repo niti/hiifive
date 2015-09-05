@@ -17,14 +17,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="protected " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AZ-m3-u39">
-                                <rect key="frame" x="187" y="75" width="80" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="profile circle thing " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AZ-m3-u39">
+                                <rect key="frame" x="125" y="75" width="142" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-Oy-qEm">
+                                <rect key="frame" x="11" y="137" width="635" height="30"/>
+                                <state key="normal" title="circle button thing for notifications which will be a table view with all the people you matched"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N29-Yj-Ioq">
+                                <rect key="frame" x="161" y="276" width="334" height="30"/>
+                                <state key="normal" title="Press one of the characteristic buttons and then "/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="have photo thing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xr3-Pr-DOT">
+                                <rect key="frame" x="119" y="397" width="129" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3h-NN-gkh">
-                                <rect key="frame" x="203" y="331" width="48" height="30"/>
+                                <rect key="frame" x="238" y="550" width="48" height="30"/>
                                 <state key="normal" title="log out"/>
                                 <connections>
                                     <action selector="loggedOutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L2q-9E-pjW"/>
@@ -109,6 +123,7 @@
                         <outlet property="emailTextField" destination="cbl-yj-3ev" id="TZU-T4-kWc"/>
                         <outlet property="loginButtonTapped" destination="ltk-Zl-b7k" id="SJr-ab-Gjy"/>
                         <outlet property="passwordTextField" destination="UZb-ow-8Ac" id="NCp-MK-6JT"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="loggedIn" id="04E-Xc-4ot"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQG-bh-4EF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -180,6 +195,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="once you register, we'll take you to a page to config profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Okp-iw-8wU">
+                                <rect key="frame" x="-247" y="422" width="444" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -188,11 +209,12 @@
                         <outlet property="passwordTextField" destination="qgi-AH-HVR" id="7Ln-7T-03U"/>
                         <outlet property="registerButton" destination="CCY-Ir-lVB" id="Lpt-yb-nIE"/>
                         <outlet property="repeatPassword" destination="vL2-vT-cMH" id="MHG-jD-J52"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="RegSuccesful" id="eSk-Xv-b1r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVT-6E-QKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1414" y="1152"/>
+            <point key="canvasLocation" x="1694" y="1352"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hba-d3-0vr">
@@ -214,6 +236,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="001-pn-Bmy"/>
+        <segue reference="eSk-Xv-b1r"/>
+        <segue reference="m8K-9V-XQp"/>
     </inferredMetricsTieBreakers>
 </document>
