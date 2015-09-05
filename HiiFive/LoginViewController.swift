@@ -30,7 +30,7 @@ class LoginViewController:UIViewController{
                 self.performSegueWithIdentifier(self.moveToMainScreen, sender: nil)
             } else {
                 let alert = UIAlertController(title: "Error", message: "Error in password or email", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+                alert.addAction(UIAlertAction(title: "C```lick", style: UIAlertActionStyle.Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
         }
