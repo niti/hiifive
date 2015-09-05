@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HvM-E6-v6e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F19a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HvM-E6-v6e">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HiiFive" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="HiiFive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,11 +23,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3h-NN-gkh">
+                                <rect key="frame" x="203" y="331" width="48" height="30"/>
+                                <state key="normal" title="log out"/>
+                                <connections>
+                                    <action selector="loggedOutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L2q-9E-pjW"/>
+                                    <segue destination="K7h-1i-cHs" kind="presentation" identifier="loggedOut" id="m8K-9V-XQp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Jqu-iX-YLL"/>
                     <connections>
+                        <outlet property="loggedOutButton" destination="D3h-NN-gkh" id="6GR-Fy-hcS"/>
                         <segue destination="K7h-1i-cHs" kind="presentation" identifier="loginView" id="RjR-OV-rQY"/>
                     </connections>
                 </viewController>
@@ -208,6 +217,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="3oE-Hc-wLf"/>
-        <segue reference="001-pn-Bmy"/>
+        <segue reference="m8K-9V-XQp"/>
     </inferredMetricsTieBreakers>
 </document>
