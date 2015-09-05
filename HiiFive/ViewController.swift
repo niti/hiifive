@@ -6,8 +6,9 @@
 //  Copyright © 2015 NKCH. All rights reserved.
 //
 
-import Parse
 import UIKit
+import Parse
+
 
 
 class ViewController: UIViewController {
@@ -26,6 +27,11 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.performSegueWithIdentifier("loginView", sender: self)
+
     }
 
 

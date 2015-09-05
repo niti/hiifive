@@ -27,6 +27,8 @@
 		9D03096F1B9ABB6800BB8295 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D03096E1B9ABB6800BB8295 /* Accounts.framework */; };
 		9D0309711B9ABD6F00BB8295 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0309701B9ABD6F00BB8295 /* libz.tbd */; };
 		9D0309731B9ABD7E00BB8295 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0309721B9ABD7E00BB8295 /* libsqlite3.tbd */; };
+		9D0309751B9AE0F500BB8295 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0309741B9AE0F500BB8295 /* RegisterPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9D0309771B9AECD400BB8295 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0309761B9AECD400BB8295 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		9D03096E1B9ABB6800BB8295 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		9D0309701B9ABD6F00BB8295 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		9D0309721B9ABD7E00BB8295 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9D0309741B9AE0F500BB8295 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		9D0309761B9AECD400BB8295 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 				9D0309331B9AB84000BB8295 /* Assets.xcassets */,
 				9D0309351B9AB84000BB8295 /* LaunchScreen.storyboard */,
 				9D0309381B9AB84000BB8295 /* Info.plist */,
+				9D0309741B9AE0F500BB8295 /* RegisterPageViewController.swift */,
+				9D0309761B9AECD400BB8295 /* LoginViewController.swift */,
 			);
 			path = HiiFive;
 			sourceTree = "<group>";
@@ -310,8 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0309771B9AECD400BB8295 /* LoginViewController.swift in Sources */,
 				9D03092F1B9AB84000BB8295 /* ViewController.swift in Sources */,
 				9D03092D1B9AB84000BB8295 /* AppDelegate.swift in Sources */,
+				9D0309751B9AE0F500BB8295 /* RegisterPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +556,7 @@
 				9D0309531B9AB84000BB8295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D0309541B9AB84000BB8295 /* Build configuration list for PBXNativeTarget "HiiFiveTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +565,7 @@
 				9D0309561B9AB84000BB8295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D0309571B9AB84000BB8295 /* Build configuration list for PBXNativeTarget "HiiFiveUITests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +574,7 @@
 				9D0309591B9AB84000BB8295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
