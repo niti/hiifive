@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,14 +19,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="profile circle thing " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AZ-m3-u39">
-                                <rect key="frame" x="125" y="75" width="142" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="profile circle thing " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AZ-m3-u39">
+                                <rect key="frame" x="161" y="343" width="142" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-Oy-qEm">
-                                <rect key="frame" x="11" y="137" width="635" height="30"/>
+                                <rect key="frame" x="51" y="452" width="635" height="30"/>
                                 <state key="normal" title="circle button thing for notifications which will be a table view with all the people you matched"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N29-Yj-Ioq">
@@ -46,8 +47,23 @@
                                     <segue destination="K7h-1i-cHs" kind="presentation" identifier="loggedOut" id="m8K-9V-XQp"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ji3-Ua-X9e">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ji3-Ua-X9e" secondAttribute="height" multiplier="15:8" constant="3" id="I1g-dX-Lh4"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nib-H0-7LF">
+                                <rect key="frame" x="403" y="193" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ji3-Ua-X9e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6VG-g1-ios"/>
+                            <constraint firstAttribute="trailing" secondItem="ji3-Ua-X9e" secondAttribute="trailing" id="gCG-At-mgh"/>
+                            <constraint firstItem="ji3-Ua-X9e" firstAttribute="top" secondItem="3AZ-m3-u39" secondAttribute="bottom" id="rFd-Yf-9X5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jqu-iX-YLL"/>
                     <connections>
@@ -188,8 +204,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="once you register you can set the traits you're looking for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Okp-iw-8wU">
-                                <rect key="frame" x="151" y="227" width="300" height="14"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="once you register you can set the traits you're looking for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Okp-iw-8wU">
+                                <rect key="frame" x="150" y="227" width="300" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -255,8 +271,8 @@
         <image name="pennappslogo.png" width="305" height="305"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="001-pn-Bmy"/>
-        <segue reference="eSk-Xv-b1r"/>
+        <segue reference="RjR-OV-rQY"/>
+        <segue reference="04E-Xc-4ot"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.3411764705882353" green="0.32941176470588235" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
 </document>
