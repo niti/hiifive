@@ -106,8 +106,11 @@
                                     <segue destination="fdV-fm-c8d" kind="presentation" id="eVh-oT-jOb"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pennappslogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="zlw-bg-Yp9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pennappslogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="zlw-bg-Yp9">
                                 <rect key="frame" x="148" y="40" width="305" height="294"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="sAP-DA-GBf"/>
+                                </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="cbl-yj-3ev">
                                 <rect key="frame" x="25" y="436" width="550" height="19"/>
@@ -271,7 +274,7 @@
         <image name="pennappslogo.png" width="305" height="305"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RjR-OV-rQY"/>
+        <segue reference="001-pn-Bmy"/>
         <segue reference="04E-Xc-4ot"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.3411764705882353" green="0.32941176470588235" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
