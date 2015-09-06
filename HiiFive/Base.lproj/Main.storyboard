@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F19a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="K7h-1i-cHs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="K7h-1i-cHs">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
@@ -43,7 +43,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="characteristic" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXd-aU-SeE">
                                             <rect key="frame" x="101" y="28" width="94" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQi-r8-s4J">
@@ -325,16 +325,16 @@
                                 <rect key="frame" x="380" y="538" width="30" height="30"/>
                                 <state key="normal" title="PHL"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgJ-Yi-QaQ">
-                                <rect key="frame" x="20" y="297" width="83" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgJ-Yi-QaQ">
+                                <rect key="frame" x="17" y="297" width="83" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFH-bh-mhW">
-                                <rect key="frame" x="112" y="297" width="82" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFH-bh-mhW">
+                                <rect key="frame" x="110" y="297" width="82" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -344,6 +344,8 @@
                             <constraint firstItem="ekX-q8-n3M" firstAttribute="centerX" secondItem="Pco-CH-J19" secondAttribute="centerX" id="5ZO-y3-GM6"/>
                             <constraint firstItem="AJ6-pF-ZpK" firstAttribute="centerX" secondItem="ekX-q8-n3M" secondAttribute="centerX" id="5dz-Qt-PgH"/>
                             <constraint firstItem="ji3-Ua-X9e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6VG-g1-ios"/>
+                            <constraint firstItem="vgJ-Yi-QaQ" firstAttribute="bottom" secondItem="ji3-Ua-X9e" secondAttribute="bottom" id="73Y-NB-Q7S"/>
+                            <constraint firstItem="MFH-bh-mhW" firstAttribute="baseline" secondItem="vgJ-Yi-QaQ" secondAttribute="baseline" id="7Kg-qZ-zFt"/>
                             <constraint firstItem="pO9-vi-dPw" firstAttribute="centerX" secondItem="VnG-Yo-dfr" secondAttribute="centerX" id="9AF-Aj-iJe"/>
                             <constraint firstItem="e40-GY-gbr" firstAttribute="centerX" secondItem="P0t-Mk-FbZ" secondAttribute="centerX" id="ACO-ji-HnM"/>
                             <constraint firstItem="wdK-pl-B0y" firstAttribute="centerX" secondItem="JuH-sX-Cov" secondAttribute="centerX" id="BiF-Jn-Fmq"/>
@@ -392,8 +394,10 @@
                             <constraint firstItem="e40-GY-gbr" firstAttribute="centerY" secondItem="JuH-sX-Cov" secondAttribute="centerY" id="mWx-Ov-2Yx"/>
                             <constraint firstItem="JuH-sX-Cov" firstAttribute="top" secondItem="TQz-Ts-2aS" secondAttribute="bottom" constant="-20" id="ntk-yJ-GPE"/>
                             <constraint firstItem="pDG-9W-l2V" firstAttribute="centerX" secondItem="TQz-Ts-2aS" secondAttribute="centerX" id="oBu-Gd-IFp"/>
+                            <constraint firstItem="ji3-Ua-X9e" firstAttribute="leading" secondItem="vgJ-Yi-QaQ" secondAttribute="trailing" constant="-100" id="oah-lW-c8J"/>
                             <constraint firstItem="ji3-Ua-X9e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qEi-P5-4Qf"/>
                             <constraint firstItem="ekX-q8-n3M" firstAttribute="width" secondItem="ekX-q8-n3M" secondAttribute="height" multiplier="1:1" id="snu-Ds-Xf9"/>
+                            <constraint firstItem="MFH-bh-mhW" firstAttribute="leading" secondItem="vgJ-Yi-QaQ" secondAttribute="trailing" constant="10" id="tOf-Kg-26J"/>
                             <constraint firstItem="ODK-1S-DHG" firstAttribute="centerY" secondItem="TQz-Ts-2aS" secondAttribute="centerY" id="ug9-3U-UWq"/>
                             <constraint firstItem="VnG-Yo-dfr" firstAttribute="width" secondItem="VnG-Yo-dfr" secondAttribute="height" multiplier="1:1" id="w1k-bz-l9r"/>
                             <constraint firstItem="D3h-NN-gkh" firstAttribute="top" secondItem="KBh-Jw-dJ3" secondAttribute="bottom" constant="2" id="w3j-vy-mIv"/>
@@ -403,8 +407,10 @@
                     <navigationItem key="navigationItem" id="Jqu-iX-YLL"/>
                     <connections>
                         <outlet property="educationValue" destination="D9A-sj-Ilc" id="1kI-lK-9Mi"/>
+                        <outlet property="firstName" destination="vgJ-Yi-QaQ" id="UOo-oy-QUd"/>
                         <outlet property="firstNameLabel" destination="vgJ-Yi-QaQ" id="Qgh-Js-Qex"/>
                         <outlet property="groupValue" destination="cF8-O3-PK0" id="NaE-71-mg1"/>
+                        <outlet property="lastName" destination="MFH-bh-mhW" id="mqE-V9-Vvy"/>
                         <outlet property="lastNameLabel" destination="MFH-bh-mhW" id="cCU-8G-DRe"/>
                         <outlet property="loggedOutButton" destination="D3h-NN-gkh" id="6GR-Fy-hcS"/>
                         <outlet property="lookingForValue" destination="pO9-vi-dPw" id="wAN-PM-Vqu"/>

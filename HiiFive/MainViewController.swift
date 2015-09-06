@@ -17,6 +17,8 @@ class MainViewController:UIViewController, UITextFieldDelegate{
     @IBOutlet weak var loggedOutButton: UIButton!
     @IBOutlet weak var placeValue: UITextField!
     
+    @IBOutlet var lastName: UILabel!
+    @IBOutlet var firstName: UILabel!
     @IBOutlet weak var lookingForValue: UITextField!
     @IBOutlet weak var occupationValue: UITextField!
     @IBOutlet weak var groupValue: UITextField!
