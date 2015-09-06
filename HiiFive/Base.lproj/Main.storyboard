@@ -19,27 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="profile circle thing " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AZ-m3-u39">
-                                <rect key="frame" x="161" y="343" width="142" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-Oy-qEm">
-                                <rect key="frame" x="51" y="452" width="635" height="30"/>
-                                <state key="normal" title="circle button thing for notifications which will be a table view with all the people you matched"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N29-Yj-Ioq">
-                                <rect key="frame" x="161" y="276" width="334" height="30"/>
-                                <state key="normal" title="Press one of the characteristic buttons and then "/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="have photo thing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xr3-Pr-DOT">
-                                <rect key="frame" x="119" y="397" width="129" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3h-NN-gkh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3h-NN-gkh">
                                 <rect key="frame" x="238" y="550" width="48" height="30"/>
                                 <state key="normal" title="log out"/>
                                 <connections>
@@ -47,22 +27,48 @@
                                     <segue destination="K7h-1i-cHs" kind="presentation" identifier="loggedOut" id="m8K-9V-XQp"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ji3-Ua-X9e">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ji3-Ua-X9e">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="318"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ji3-Ua-X9e" secondAttribute="height" multiplier="15:8" constant="3" id="I1g-dX-Lh4"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nib-H0-7LF">
-                                <rect key="frame" x="403" y="193" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nib-H0-7LF">
+                                <rect key="frame" x="173" y="193" width="276" height="30"/>
                                 <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQz-Ts-2aS">
+                                <rect key="frame" x="422" y="357" width="42" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.57297170249605678" blue="0.83915356925646056" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TQz-Ts-2aS" secondAttribute="height" multiplier="1:1" id="IJk-hE-u4S"/>
+                                    <constraint firstAttribute="width" constant="42" id="qX5-Ev-Gpp"/>
+                                </constraints>
+                                <state key="normal" title="Trait 1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-Oy-qEm">
+                                <rect key="frame" x="-35" y="512" width="635" height="30"/>
+                                <state key="normal" title="circle button thing for notifications which will be a table view with all the people you matched"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ji3-Ua-X9e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6VG-g1-ios"/>
+                            <constraint firstItem="D3h-NN-gkh" firstAttribute="top" secondItem="CrL-Oy-qEm" secondAttribute="bottom" constant="8" id="DUL-uv-uXt"/>
+                            <constraint firstItem="CrL-Oy-qEm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-55" id="ElN-gC-Qzl"/>
+                            <constraint firstAttribute="trailing" secondItem="TQz-Ts-2aS" secondAttribute="trailing" constant="136" id="Ih1-5e-D6M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CrL-Oy-qEm" secondAttribute="trailing" constant="-20" id="QQ2-4h-XIg"/>
+                            <constraint firstItem="D3h-NN-gkh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="238" id="WLe-vR-JCh"/>
+                            <constraint firstItem="CrL-Oy-qEm" firstAttribute="top" secondItem="TQz-Ts-2aS" secondAttribute="bottom" constant="113" id="XTL-g4-1iq"/>
                             <constraint firstAttribute="trailing" secondItem="ji3-Ua-X9e" secondAttribute="trailing" id="gCG-At-mgh"/>
-                            <constraint firstItem="ji3-Ua-X9e" firstAttribute="top" secondItem="3AZ-m3-u39" secondAttribute="bottom" id="rFd-Yf-9X5"/>
+                            <constraint firstItem="Nib-H0-7LF" firstAttribute="top" secondItem="ji3-Ua-X9e" secondAttribute="bottom" constant="65" id="ifF-ap-tvU"/>
+                            <constraint firstItem="ji3-Ua-X9e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qEi-P5-4Qf"/>
+                            <constraint firstAttribute="bottom" secondItem="D3h-NN-gkh" secondAttribute="bottom" constant="20" id="zUw-8t-aAu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jqu-iX-YLL"/>
@@ -274,7 +280,7 @@
         <image name="pennappslogo.png" width="305" height="305"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="001-pn-Bmy"/>
+        <segue reference="m8K-9V-XQp"/>
         <segue reference="04E-Xc-4ot"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.3411764705882353" green="0.32941176470588235" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
