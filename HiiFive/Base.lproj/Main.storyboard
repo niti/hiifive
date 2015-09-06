@@ -6,6 +6,11 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -35,11 +40,11 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQz-Ts-2aS">
-                                <rect key="frame" x="422" y="357" width="42" height="42"/>
+                                <rect key="frame" x="265" y="338" width="70" height="70"/>
                                 <color key="backgroundColor" red="1" green="0.57297170249605678" blue="0.83915356925646056" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="TQz-Ts-2aS" secondAttribute="height" multiplier="1:1" id="IJk-hE-u4S"/>
-                                    <constraint firstAttribute="width" constant="42" id="qX5-Ev-Gpp"/>
+                                    <constraint firstAttribute="width" constant="70" id="qX5-Ev-Gpp"/>
                                 </constraints>
                                 <state key="normal" title="Trait 1"/>
                                 <userDefinedRuntimeAttributes>
@@ -48,22 +53,107 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JuH-sX-Cov">
+                                <rect key="frame" x="365" y="388" width="70" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.57297170249999996" blue="0.83915356929999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="5TF-WC-r86"/>
+                                    <constraint firstAttribute="width" secondItem="JuH-sX-Cov" secondAttribute="height" multiplier="1:1" id="VSb-Ds-3Ec"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                                <state key="normal" title="select a matcher"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrL-Oy-qEm">
-                                <rect key="frame" x="-35" y="512" width="635" height="30"/>
+                                <rect key="frame" x="-35" y="512" width="636" height="30"/>
                                 <state key="normal" title="circle button thing for notifications which will be a table view with all the people you matched"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VnG-Yo-dfr">
+                                <rect key="frame" x="165" y="388" width="70" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.57297170249999996" blue="0.83915356929999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VnG-Yo-dfr" secondAttribute="height" multiplier="1:1" id="4es-Xw-SWU"/>
+                                    <constraint firstAttribute="width" constant="70" id="EVb-Zr-4ca"/>
+                                </constraints>
+                                <state key="normal" title="Trait 2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekX-q8-n3M">
+                                <rect key="frame" x="215" y="478" width="70" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.57297170249999996" blue="0.83915356929999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="EXK-UY-cVv"/>
+                                </constraints>
+                                <state key="normal" title="Trait 4"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pco-CH-J19" userLabel="left structural view">
+                                <rect key="frame" x="235" y="423" width="30" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="2vd-hB-s72"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0t-Mk-FbZ">
+                                <rect key="frame" x="315" y="478" width="70" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.57297170249999996" blue="0.83915356929999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Yjy-lR-FQ2"/>
+                                </constraints>
+                                <state key="normal" title="Trait 5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e40-GY-gbr" userLabel="right structural view">
+                                <rect key="frame" x="335" y="423" width="30" height="0.0"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="dPK-Ho-Gnd"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ekX-q8-n3M" firstAttribute="centerX" secondItem="Pco-CH-J19" secondAttribute="centerX" id="5ZO-y3-GM6"/>
                             <constraint firstItem="ji3-Ua-X9e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6VG-g1-ios"/>
+                            <constraint firstItem="e40-GY-gbr" firstAttribute="centerX" secondItem="P0t-Mk-FbZ" secondAttribute="centerX" id="ACO-ji-HnM"/>
                             <constraint firstItem="D3h-NN-gkh" firstAttribute="top" secondItem="CrL-Oy-qEm" secondAttribute="bottom" constant="8" id="DUL-uv-uXt"/>
                             <constraint firstItem="CrL-Oy-qEm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-55" id="ElN-gC-Qzl"/>
-                            <constraint firstAttribute="trailing" secondItem="TQz-Ts-2aS" secondAttribute="trailing" constant="136" id="Ih1-5e-D6M"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CrL-Oy-qEm" secondAttribute="trailing" constant="-20" id="QQ2-4h-XIg"/>
+                            <constraint firstItem="JuH-sX-Cov" firstAttribute="leading" secondItem="e40-GY-gbr" secondAttribute="trailing" id="F0G-uX-A7m"/>
+                            <constraint firstItem="Pco-CH-J19" firstAttribute="centerY" secondItem="VnG-Yo-dfr" secondAttribute="centerY" id="Jri-4l-xIc"/>
+                            <constraint firstItem="TQz-Ts-2aS" firstAttribute="top" secondItem="ji3-Ua-X9e" secondAttribute="bottom" constant="20" id="Nk2-25-EWr"/>
+                            <constraint firstItem="ekX-q8-n3M" firstAttribute="top" secondItem="VnG-Yo-dfr" secondAttribute="bottom" constant="20" id="Nlk-H9-jj0"/>
+                            <constraint firstItem="TQz-Ts-2aS" firstAttribute="leading" secondItem="Pco-CH-J19" secondAttribute="trailing" id="Q2O-DH-2qg"/>
+                            <constraint firstItem="JuH-sX-Cov" firstAttribute="leading" secondItem="TQz-Ts-2aS" secondAttribute="trailing" constant="30" id="QcX-hi-CgG"/>
                             <constraint firstItem="D3h-NN-gkh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="238" id="WLe-vR-JCh"/>
-                            <constraint firstItem="CrL-Oy-qEm" firstAttribute="top" secondItem="TQz-Ts-2aS" secondAttribute="bottom" constant="113" id="XTL-g4-1iq"/>
+                            <constraint firstItem="TQz-Ts-2aS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YhV-h8-2pv"/>
+                            <constraint firstItem="TQz-Ts-2aS" firstAttribute="leading" secondItem="VnG-Yo-dfr" secondAttribute="trailing" constant="30" id="eM4-ui-pdl"/>
                             <constraint firstAttribute="trailing" secondItem="ji3-Ua-X9e" secondAttribute="trailing" id="gCG-At-mgh"/>
+                            <constraint firstItem="e40-GY-gbr" firstAttribute="leading" secondItem="TQz-Ts-2aS" secondAttribute="trailing" id="hCz-ga-QcA"/>
+                            <constraint firstItem="P0t-Mk-FbZ" firstAttribute="width" secondItem="P0t-Mk-FbZ" secondAttribute="height" multiplier="1:1" id="iII-oP-aSv"/>
+                            <constraint firstItem="VnG-Yo-dfr" firstAttribute="trailing" secondItem="Pco-CH-J19" secondAttribute="leading" id="iqk-p6-1CT"/>
+                            <constraint firstItem="P0t-Mk-FbZ" firstAttribute="centerY" secondItem="ekX-q8-n3M" secondAttribute="centerY" id="kS8-Wc-4VZ"/>
+                            <constraint firstItem="VnG-Yo-dfr" firstAttribute="top" secondItem="TQz-Ts-2aS" secondAttribute="bottom" constant="-20" id="mMn-JQ-Wvi"/>
+                            <constraint firstItem="e40-GY-gbr" firstAttribute="centerY" secondItem="JuH-sX-Cov" secondAttribute="centerY" id="mWx-Ov-2Yx"/>
+                            <constraint firstItem="JuH-sX-Cov" firstAttribute="top" secondItem="TQz-Ts-2aS" secondAttribute="bottom" constant="-20" id="ntk-yJ-GPE"/>
                             <constraint firstItem="ji3-Ua-X9e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qEi-P5-4Qf"/>
+                            <constraint firstItem="ekX-q8-n3M" firstAttribute="width" secondItem="ekX-q8-n3M" secondAttribute="height" multiplier="1:1" id="snu-Ds-Xf9"/>
+                            <constraint firstItem="VnG-Yo-dfr" firstAttribute="width" secondItem="VnG-Yo-dfr" secondAttribute="height" multiplier="1:1" id="w1k-bz-l9r"/>
                             <constraint firstAttribute="bottom" secondItem="D3h-NN-gkh" secondAttribute="bottom" constant="20" id="zUw-8t-aAu"/>
                         </constraints>
                     </view>
@@ -295,7 +385,7 @@
         <image name="pennappslogo.png" width="305" height="305"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="001-pn-Bmy"/>
+        <segue reference="m8K-9V-XQp"/>
         <segue reference="eSk-Xv-b1r"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.3411764705882353" green="0.32941176470588235" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
