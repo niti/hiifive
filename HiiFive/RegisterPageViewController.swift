@@ -57,6 +57,7 @@ class RegisterPageViewController:UIViewController{
         user.username = emailTextField.text
         user.password = passwordTextField.text
         
+        
         //3
         user.signUpInBackgroundWithBlock { succeeded, error in
             if (succeeded) {

@@ -31,12 +31,14 @@ class MainViewController:UIViewController, UITextFieldDelegate{
         self.groupValue.delegate = self
         self.lookingForValue.delegate = self
         self.occupationValue.delegate = self
-        self.placeValue.delegate = self
+//        self.placeValue.delegate = self
         let user  = PFUser.currentUser()
+        print(user)
         let fname = user!["firstName"]
         let lname = user!["lasttName"]
         firstNameLabel.text = String(fname)
-        lastNameLabel.text =  String(lname)
+        print(String(fname))
+       lastNameLabel.text =  String(lname)
        
         
        
@@ -104,22 +106,9 @@ class MainViewController:UIViewController, UITextFieldDelegate{
             traitObject["answer"] = x.1
             traitObject["fiveThings"] = x.2
             
-            traitObject["user"] = currentUser
+//            traitObject["user"] = currentUser
+            
             currentUser["traits"] = traitObject
-            
-//            currentUser.saveInBackground()
-//            traitObject.saveInBackground()
-            
-            
-            traitObject.saveInBackgroundWithBlock(){
-                (success: Bool, error: NSError?) -> Void in
-                if (success) {
-                    print("sucess saving value")
-                } else {
-                    // There was a problem, check error.description
-                    print(error?.description)
-                }
-            }
             
             currentUser.saveInBackgroundWithBlock(){
                 (success: Bool, error: NSError?) -> Void in
