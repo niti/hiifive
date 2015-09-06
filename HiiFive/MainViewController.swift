@@ -12,7 +12,7 @@ import UIKit
 import Parse
 import Darwin
 
-class MainViewController:UIViewController{
+class MainViewController:UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var loggedOutButton: UIButton!
     @IBOutlet weak var placeValue: UITextField!
@@ -21,14 +21,31 @@ class MainViewController:UIViewController{
     @IBOutlet weak var occupationValue: UITextField!
     @IBOutlet weak var groupValue: UITextField!
     @IBOutlet weak var educationValue: UITextField!
+    @IBOutlet weak var firstNameLabel: UILabel!
+    @IBOutlet weak var lastNameLabel: UILabel!
     let moveToLoginScreen = "loggedOut"
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let currentUser = PFUser.currentUser()
-        print(currentUser)
+        self.educationValue.delegate = self
+        self.groupValue.delegate = self
+        self.lookingForValue.delegate = self
+        self.occupationValue.delegate = self
+        self.placeValue.delegate = self
+        let user  = PFUser.currentUser()
+        let fname = user!["firstName"]
+        let lname = user!["lasttName"]
+        firstNameLabel.text = String(fname)
+        lastNameLabel.text =  String(lname)
        
         
+       
+        
+    }
+    
+    func textFieldShouldReturn(userText: UITextField) -> Bool {
+        userText.resignFirstResponder()
+        return true;
     }
     
     @IBAction func placeTraitValueChanged(sender: AnyObject) {
@@ -90,9 +107,21 @@ class MainViewController:UIViewController{
             traitObject["user"] = currentUser
             currentUser["traits"] = traitObject
             
-            currentUser.save()
+//            currentUser.saveInBackground()
+//            traitObject.saveInBackground()
+            
             
             traitObject.saveInBackgroundWithBlock(){
+                (success: Bool, error: NSError?) -> Void in
+                if (success) {
+                    print("sucess saving value")
+                } else {
+                    // There was a problem, check error.description
+                    print(error?.description)
+                }
+            }
+            
+            currentUser.saveInBackgroundWithBlock(){
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {
                     print("sucess saving value")

@@ -325,6 +325,18 @@
                                 <rect key="frame" x="380" y="538" width="30" height="30"/>
                                 <state key="normal" title="PHL"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgJ-Yi-QaQ">
+                                <rect key="frame" x="20" y="297" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFH-bh-mhW">
+                                <rect key="frame" x="112" y="297" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -391,7 +403,9 @@
                     <navigationItem key="navigationItem" id="Jqu-iX-YLL"/>
                     <connections>
                         <outlet property="educationValue" destination="D9A-sj-Ilc" id="1kI-lK-9Mi"/>
+                        <outlet property="firstNameLabel" destination="vgJ-Yi-QaQ" id="Qgh-Js-Qex"/>
                         <outlet property="groupValue" destination="cF8-O3-PK0" id="NaE-71-mg1"/>
+                        <outlet property="lastNameLabel" destination="MFH-bh-mhW" id="cCU-8G-DRe"/>
                         <outlet property="loggedOutButton" destination="D3h-NN-gkh" id="6GR-Fy-hcS"/>
                         <outlet property="lookingForValue" destination="pO9-vi-dPw" id="wAN-PM-Vqu"/>
                         <outlet property="occupationValue" destination="F4S-4A-4DX" id="cqF-6d-drY"/>
