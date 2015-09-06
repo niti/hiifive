@@ -13,7 +13,7 @@ class NotificationTableViewController: UITableViewController {
     
     var currentUser = PFUser.currentUser()
     
-    func allDates() --> [
+    //func allDates() --> [
     
 //    //number of sections
 //    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

@@ -25,6 +25,8 @@
 		9D0309751B9AE0F500BB8295 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0309741B9AE0F500BB8295 /* RegisterPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9D0309771B9AECD400BB8295 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0309761B9AECD400BB8295 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9D0309791B9B2EA800BB8295 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0309781B9B2EA800BB8295 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9DDE95EA1B9C3820006DEE9B /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE95E91B9C3820006DEE9B /* TPKeyboardAvoidingScrollView.m */; settings = {ASSET_TAGS = (); }; };
+		9DDE95ED1B9C4475006DEE9B /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DDE95EC1B9C4475006DEE9B /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {ASSET_TAGS = (); }; };
 		ACF4A4371B9B21FF0023E3FD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF4A4351B9B21FF0023E3FD /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		ACF4A4381B9B21FF0023E3FD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF4A4361B9B21FF0023E3FD /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		ACF4A43A1B9B247B0023E3FD /* CoreLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4A4391B9B247B0023E3FD /* CoreLocationController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -77,6 +79,11 @@
 		9D0309741B9AE0F500BB8295 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		9D0309761B9AECD400BB8295 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D0309781B9B2EA800BB8295 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9DDE95E71B9C3808006DEE9B /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		9DDE95E81B9C381F006DEE9B /* HiiFive-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HiiFive-Bridging-Header.h"; sourceTree = "<group>"; };
+		9DDE95E91B9C3820006DEE9B /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		9DDE95EB1B9C4475006DEE9B /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		9DDE95EC1B9C4475006DEE9B /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		ACF4A4351B9B21FF0023E3FD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		ACF4A4361B9B21FF0023E3FD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		ACF4A4391B9B247B0023E3FD /* CoreLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationController.swift; sourceTree = "<group>"; };
@@ -159,6 +166,10 @@
 		9D03092B1B9AB84000BB8295 /* HiiFive */ = {
 			isa = PBXGroup;
 			children = (
+				9DDE95E91B9C3820006DEE9B /* TPKeyboardAvoidingScrollView.m */,
+				9DDE95EB1B9C4475006DEE9B /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				9DDE95EC1B9C4475006DEE9B /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				9DDE95E71B9C3808006DEE9B /* TPKeyboardAvoidingScrollView.h */,
 				9D03092C1B9AB84000BB8295 /* AppDelegate.swift */,
 				9D03092E1B9AB84000BB8295 /* ViewController.swift */,
 				ACF4A4391B9B247B0023E3FD /* CoreLocationController.swift */,
@@ -171,6 +182,7 @@
 				9D0309761B9AECD400BB8295 /* LoginViewController.swift */,
 				9D0309781B9B2EA800BB8295 /* MainViewController.swift */,
 				EE103ED71B9C005C00101271 /* NotificationTableViewCellController.swift */,
+				9DDE95E81B9C381F006DEE9B /* HiiFive-Bridging-Header.h */,
 			);
 			path = HiiFive;
 			sourceTree = "<group>";
@@ -261,7 +273,7 @@
 				TargetAttributes = {
 					9D0309281B9AB84000BB8295 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = GJ983GN5BM;
+						DevelopmentTeam = 984B6A6L5U;
 					};
 					9D03093C1B9AB84000BB8295 = {
 						CreatedOnToolsVersion = 7.0;
@@ -335,8 +347,10 @@
 				EE103ED61B9BFBDD00101271 /* NotificationTableViewController.swift in Sources */,
 				9D03092F1B9AB84000BB8295 /* ViewController.swift in Sources */,
 				9D0309791B9B2EA800BB8295 /* MainViewController.swift in Sources */,
+				9DDE95EA1B9C3820006DEE9B /* TPKeyboardAvoidingScrollView.m in Sources */,
 				9D03092D1B9AB84000BB8295 /* AppDelegate.swift in Sources */,
 				9D0309751B9AE0F500BB8295 /* RegisterPageViewController.swift in Sources */,
+				9DDE95ED1B9C4475006DEE9B /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -490,9 +505,11 @@
 					"-lsqlite3.0",
 					"-lz",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.HiiFive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NKCH.HiiFive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HiiFive/HiiFive-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -500,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
@@ -514,9 +532,10 @@
 					"-lsqlite3.0",
 					"-lz",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.HiiFive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NKCH.HiiFive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HiiFive/HiiFive-Bridging-Header.h";
 			};
 			name = Release;
 		};
