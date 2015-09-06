@@ -28,6 +28,9 @@
 		ACF4A4371B9B21FF0023E3FD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF4A4351B9B21FF0023E3FD /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		ACF4A4381B9B21FF0023E3FD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF4A4361B9B21FF0023E3FD /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		ACF4A43A1B9B247B0023E3FD /* CoreLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4A4391B9B247B0023E3FD /* CoreLocationController.swift */; settings = {ASSET_TAGS = (); }; };
+		EE103ED41B9BD62300101271 /* background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EE103ED31B9BD62300101271 /* background.jpeg */; };
+		EE103ED61B9BFBDD00101271 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE103ED51B9BFBDD00101271 /* NotificationTableViewController.swift */; };
+		EE103ED81B9C005C00101271 /* NotificationTableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE103ED71B9C005C00101271 /* NotificationTableViewCellController.swift */; };
 		EE4464E31B9B5F89009863F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4464DF1B9B5250009863F1 /* CoreLocation.framework */; };
 		EE4464E51B9B6F6D009863F1 /* pennappslogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EE4464E41B9B6F6D009863F1 /* pennappslogo.png */; };
 /* End PBXBuildFile section */
@@ -77,6 +80,9 @@
 		ACF4A4351B9B21FF0023E3FD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		ACF4A4361B9B21FF0023E3FD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		ACF4A4391B9B247B0023E3FD /* CoreLocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationController.swift; sourceTree = "<group>"; };
+		EE103ED31B9BD62300101271 /* background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpeg; sourceTree = "<group>"; };
+		EE103ED51B9BFBDD00101271 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
+		EE103ED71B9C005C00101271 /* NotificationTableViewCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCellController.swift; sourceTree = "<group>"; };
 		EE4464DF1B9B5250009863F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = ../CoreLocation.framework; sourceTree = "<group>"; };
 		EE4464E41B9B6F6D009863F1 /* pennappslogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pennappslogo.png; path = "hhfive graphics/pennappslogo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0309671B9ABB3300BB8295 /* QuartzCore.framework in Frameworks */,
 				9D03096F1B9ABB6800BB8295 /* Accounts.framework in Frameworks */,
 				ACF4A4371B9B21FF0023E3FD /* Bolts.framework in Frameworks */,
 				9D03096D1B9ABB4B00BB8295 /* SystemConfiguration.framework in Frameworks */,
@@ -93,7 +100,6 @@
 				ACF4A4381B9B21FF0023E3FD /* Parse.framework in Frameworks */,
 				EE4464E31B9B5F89009863F1 /* CoreLocation.framework in Frameworks */,
 				9D0309691B9ABB3A00BB8295 /* Security.framework in Frameworks */,
-				9D0309671B9ABB3300BB8295 /* QuartzCore.framework in Frameworks */,
 				9D0309631B9ABB2500BB8295 /* CoreGraphics.framework in Frameworks */,
 				9D0309611B9ABADA00BB8295 /* CFNetwork.framework in Frameworks */,
 				9D03095F1B9AB98200BB8295 /* AudioToolbox.framework in Frameworks */,
@@ -121,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				EE4464E41B9B6F6D009863F1 /* pennappslogo.png */,
+				EE103ED31B9BD62300101271 /* background.jpeg */,
 				EE4464DF1B9B5250009863F1 /* CoreLocation.framework */,
 				ACF4A4351B9B21FF0023E3FD /* Bolts.framework */,
 				ACF4A4361B9B21FF0023E3FD /* Parse.framework */,
@@ -156,12 +163,14 @@
 				9D03092E1B9AB84000BB8295 /* ViewController.swift */,
 				ACF4A4391B9B247B0023E3FD /* CoreLocationController.swift */,
 				9D0309301B9AB84000BB8295 /* Main.storyboard */,
+				EE103ED51B9BFBDD00101271 /* NotificationTableViewController.swift */,
 				9D0309331B9AB84000BB8295 /* Assets.xcassets */,
 				9D0309351B9AB84000BB8295 /* LaunchScreen.storyboard */,
 				9D0309381B9AB84000BB8295 /* Info.plist */,
 				9D0309741B9AE0F500BB8295 /* RegisterPageViewController.swift */,
 				9D0309761B9AECD400BB8295 /* LoginViewController.swift */,
 				9D0309781B9B2EA800BB8295 /* MainViewController.swift */,
+				EE103ED71B9C005C00101271 /* NotificationTableViewCellController.swift */,
 			);
 			path = HiiFive;
 			sourceTree = "<group>";
@@ -295,6 +304,7 @@
 				EE4464E51B9B6F6D009863F1 /* pennappslogo.png in Resources */,
 				9D0309341B9AB84000BB8295 /* Assets.xcassets in Resources */,
 				9D0309321B9AB84000BB8295 /* Main.storyboard in Resources */,
+				EE103ED41B9BD62300101271 /* background.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +331,8 @@
 			files = (
 				ACF4A43A1B9B247B0023E3FD /* CoreLocationController.swift in Sources */,
 				9D0309771B9AECD400BB8295 /* LoginViewController.swift in Sources */,
+				EE103ED81B9C005C00101271 /* NotificationTableViewCellController.swift in Sources */,
+				EE103ED61B9BFBDD00101271 /* NotificationTableViewController.swift in Sources */,
 				9D03092F1B9AB84000BB8295 /* ViewController.swift in Sources */,
 				9D0309791B9B2EA800BB8295 /* MainViewController.swift in Sources */,
 				9D03092D1B9AB84000BB8295 /* AppDelegate.swift in Sources */,
